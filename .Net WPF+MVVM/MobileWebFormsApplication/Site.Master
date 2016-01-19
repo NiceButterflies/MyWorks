@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MobileWebFormsApplication.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="~/Content/stuck.css">
+    <link rel="stylesheet" href="~/Content/search.css">
+    <link rel="stylesheet" href="~/Content/style.css">
+    <link rel="stylesheet" href="~/Content/menu.css">
+    <link rel="stylesheet" href="~/Content/touchTouch.css">
+    <link rel="stylesheet" href="~/Content/table.css">
+</head>
+<body class="page1" id="top">
+    <form runat="server">
+
+        <header>
+            <section id="stuck_container">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid_12">
+                            <h1>
+                                <img src="fonts/1.png" alt="Logo alt" width="150" height="135"/>
+                            </h1>
+                            <div class="navigation">
+                                <div class="login-link-container">
+                                    <nav>
+                                        <ul class="sf-menu1">
+                                            <li><a class="navbar-brand" runat="server" href="~/">Mobile questionnaire</a></li>
+                                            <li><a class="navbar-brand" runat="server" href="~/About">Statistics</a></li>
+                                            <asp:LoginView runat="server" ViewStateMode="Disabled">
+                                                <AnonymousTemplate>
+                                                    <li><a class="navbar-brand" runat="server" href="~/Account/Register">Register</a></li>
+                                                    <li><a class="navbar-brand" runat="server" href="~/Account/Login">Log in</a></li>
+                                                </AnonymousTemplate>
+
+                                                <LoggedInTemplate>
+                                                    <ul class="nav navbar-nav navbar-right">
+                                                        <li><a class="navbar-brand" runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                                        <li>
+                                                            <asp:LoginStatus class="navbar-brand" runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                                        </li>
+                                                    </ul>
+                                                </LoggedInTemplate>
+                                            </asp:LoginView>
+                                        </ul>
+                                    </nav>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <br />
+                             <br />                        </div>
+                         <br />
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_4"></div>
+                    <div class="grid_4">
+                        <div class="container body-content">
+                            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <div class="grid_4"></div>
+                </div>
+                </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <div class="copyright">
+                            <span class="brand">Bliss </span>&copy; <span id="copyright-year"></span>| <a href="#">Privacy Policy</a>
+                            <div>Project of Evgenia Dulko, Pavlukovskaya Ekaterina, Podrez Alesya</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

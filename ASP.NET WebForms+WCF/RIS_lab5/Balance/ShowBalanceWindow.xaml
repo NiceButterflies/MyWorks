@@ -1,0 +1,13 @@
+﻿<Window x:Class="RIS_lab5.View.ShowBalanceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ShowBalanceWindow" Height="315.663" Width="356.627">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="174,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding SaleCard.Number, Mode=TwoWay}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="174,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding SaleCard.Balance, Mode=TwoWay}"/>
+        <Label Content="Веедите номер карточки" HorizontalAlignment="Left" Margin="10,63,0,0" VerticalAlignment="Top"/>
+        <Label Content="Баланс карточки" HorizontalAlignment="Left" Margin="55,193,0,0" VerticalAlignment="Top"/>
+        <Button Content="Найти" HorizontalAlignment="Left" Margin="198,111,0,0" VerticalAlignment="Top" Width="75" Command="{Binding ClickCommand}"/>
+
+    </Grid>
+</Window>

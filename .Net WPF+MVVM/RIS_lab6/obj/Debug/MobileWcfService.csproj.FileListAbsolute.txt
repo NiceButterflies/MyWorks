@@ -1,0 +1,12 @@
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\bin\RIS_lab6.dll.config
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\bin\RIS_lab6.dll
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\bin\RIS_lab6.pdb
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\obj\Debug\MobileWcfService.csprojResolveAssemblyReference.cache
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\obj\Debug\RIS_lab6.dll
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\obj\Debug\RIS_lab6.pdb
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\obj\Debug\RIS_lab6.Properties.Resources.resources
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\obj\Debug\MobileWcfService.csproj.GenerateResource.Cache
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\bin\EntityFramework.dll
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\bin\EntityFramework.SqlServer.dll
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\bin\EntityFramework.xml
+C:\Users\Evgenia\Source\Workspaces\RisLabsSolution\RIS_lab6\RIS_lab6\bin\EntityFramework.SqlServer.xml

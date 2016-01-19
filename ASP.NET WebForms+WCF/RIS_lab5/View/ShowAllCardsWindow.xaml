@@ -1,0 +1,11 @@
+﻿<Window x:Class="RIS_lab5.View.ShowAllCardsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ShowAllCardsWindow" Height="323.265" Width="559.592">
+    <Grid>
+        <DataGrid  Name="Cards" HorizontalAlignment="Left" Margin="39,26,0,0" VerticalAlignment="Top" Height="171" Width="485" SelectionChanged="DataGrid_SelectionChanged"  AutoGenerateColumns="True">
+           
+        </DataGrid>
+
+    </Grid>
+</Window>

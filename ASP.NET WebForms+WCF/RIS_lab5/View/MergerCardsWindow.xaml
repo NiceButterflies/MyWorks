@@ -1,0 +1,26 @@
+﻿<Window x:Class="RIS_lab5.View.MergerCardsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MergerCards" Height="384.667" Width="585.333">
+    <Grid>
+        <Label Content="Номер бонусной карты 1" HorizontalAlignment="Left" Margin="67,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Номер бонусной карты 2" HorizontalAlignment="Left" Margin="356,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Баланс" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="58"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="79,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Number1}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="370,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Number2}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="79,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Balance1, Mode=TwoWay}"/>
+        <Label Content="Баланс" HorizontalAlignment="Left" Margin="307,81,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="370,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding Balance2, Mode=TwoWay}"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="210" Margin="10,135,0,0" Stroke="Black" VerticalAlignment="Top" Width="559"/>
+        <Label Content="Фамилия" HorizontalAlignment="Left" Margin="127,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.254,-1.103"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="215,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding SaleCard.Surname}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="215,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding SaleCard.Name}"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="215,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding SaleCard.NewNumber, Mode=OneWay}" IsReadOnly="True"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="215,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="{Binding NewBalance, Mode=OneWay}" IsReadOnly="True"/>
+        <Label Content="Имя" HorizontalAlignment="Left" Margin="127,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.535,0.1"/>
+        <Label Content="Номер бонусной карты" HorizontalAlignment="Left" Margin="47,236,0,0" VerticalAlignment="Top"/>
+        <Label Content="Сумма баланса" HorizontalAlignment="Left" Margin="93,279,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.239,0.487"/>
+        <Button Content="Объединить карточки" HorizontalAlignment="Left" Margin="370,310,0,0" VerticalAlignment="Top" Width="181" Command="{Binding ClickCommand}" Height="26" Click="Button_Click"/>
+
+    </Grid>
+</Window>

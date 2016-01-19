@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MobileQuestionnaireModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="questionnaire">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sex" Type="varchar" MaxLength="10" />
+    <Property Name="age" Type="int" />
+    <Property Name="profession" Type="varchar" MaxLength="50" />
+    <Property Name="income" Type="int" />
+    <Property Name="mobile_existence" Type="int" />
+    <Property Name="brand" Type="varchar" MaxLength="50" />
+    <Property Name="price" Type="int" />
+    <Property Name="OS" Type="varchar" MaxLength="50" />
+    <Property Name="furniture" Type="int" />
+    <Property Name="read" Type="int" />
+  </EntityType>
+  <EntityContainer Name="MobileQuestionnaireModelStoreContainer">
+    <EntitySet Name="questionnaire" EntityType="Self.questionnaire" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

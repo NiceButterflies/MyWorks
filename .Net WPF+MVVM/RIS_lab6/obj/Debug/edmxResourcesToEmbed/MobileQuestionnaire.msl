@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MobileQuestionnaireModelStoreContainer" CdmEntityContainer="MobileQuestionnaireEntities1">
+    <EntitySetMapping Name="questionnaire">
+      <EntityTypeMapping TypeName="MobileQuestionnaireModel.questionnaire">
+        <MappingFragment StoreEntitySet="questionnaire">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sex" ColumnName="sex" />
+          <ScalarProperty Name="age" ColumnName="age" />
+          <ScalarProperty Name="profession" ColumnName="profession" />
+          <ScalarProperty Name="income" ColumnName="income" />
+          <ScalarProperty Name="mobile_existence" ColumnName="mobile_existence" />
+          <ScalarProperty Name="brand" ColumnName="brand" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="OS" ColumnName="OS" />
+          <ScalarProperty Name="furniture" ColumnName="furniture" />
+          <ScalarProperty Name="read" ColumnName="read" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

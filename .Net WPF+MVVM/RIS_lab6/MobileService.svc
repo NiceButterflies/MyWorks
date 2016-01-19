@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="RIS_lab6.MobileService" CodeBehind="MobileService.svc.cs" %>
